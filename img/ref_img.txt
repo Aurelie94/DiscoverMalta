@@ -1,0 +1,70 @@
+mdina.jpg :
+https://pixabay.com/p-3009950/?no_redirect
+
+img- azur-window :
+https://upload.wikimedia.org/wikipedia/commons/f/f5/Mt_Azure_Window.jpg
+
+img-comino :
+https://www.visitgozo.com/wp-content/uploads/2016/08/1-5-700x500.jpg
+
+img-hagar-qim :
+https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/c6/2d/hagar-qim-temple-interior.jpg
+
+img-marsaxlokk :
+
+http://images6.fanpop.com/image/photos/41400000/Marsaxlokk-Malta-malta-41475478-600-398.jpg
+
+img-blue-grotto :
+
+https://www.mymaltatours.com/wp-content/uploads/2017/03/The-Blue-Grotto-Caves.jpg
+
+img-mdina-city.jpg :
+
+https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/131412_Valletta_Mdina_shutterstock_118309555.jpg
+
+img-mdina-gate.jpg :
+
+http://www.templeseeker.com/wp-content/uploads/2018/03/Mdina-Gate-750x500.jpg
+
+img-valette-eglise.jpg :
+
+https://www.petitfute.com/medias/mag/11411/835/8160-la-valette-la-valette-une-capitale.jpg
+
+img-valette-ruelle.jpg :
+
+https://www.petitfute.com/medias/mag/9935/835/6988-la-valette-la-valette-une-capitale.jpg
+
+img-valette.jpg :
+
+https://www.larousse.fr/encyclopedie/data/images/1314827-La_Valette.jpg
+
+img-sliema :
+
+https://i.ytimg.com/vi/8qhJAuVlXMM/maxresdefault.jpg
+
+img-st-julians.jpg :
+
+https://cdn.mercuryholidays.co.uk/contents/images/resorts/galleries/14/st-julians.jpg
+
+
+
+visite-gozo.jpg :
+
+https://www.allantvers.com/wp-content/uploads/2017/03/Mgarr-Harbour-1.jpg
+
+visite-valette.jpg :
+
+https://www.visiter-malte.com/wp-content/uploads/2015/02/la-valette-malte.jpg
+
+visite-mdina.jpg :
+
+https://cherylhoward.com/wp-content/uploads/2018/12/Mdina-Malta-Residential-Homes-940x627.jpg
+
+
+accueil-plage.jpg :
+
+https://www.lonelyplanet.fr/sites/lonelyplanet/files/fotolia_89603669_subscription_monthly_m.jpg
+
+accueil-ville.jpg :
+
+https://www.guide-evasion.fr/wp-content/uploads/2013/09/shutterstock_163047326-copie_opt1.jpg

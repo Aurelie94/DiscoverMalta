@@ -1,0 +1,571 @@
+@charset "utf-8";
+
+/*Animation-----------------------------------------------------------------------------*/
+
+@Keyframes BgAnim{
+	
+
+	
+	0%{
+		background-position:
+			0vw 0vh,
+			-100vw 0vh,
+			-200vw 0vh,
+			-300vw 0vh;	
+		
+		background-size:cover;
+
+		
+		
+	}
+	
+	17%{
+		background-position:
+			0vw 0vh,
+			-100vw 0vh,
+			-200vw 0vh,
+			-300vw 0vh;
+			
+		background-size:cover;
+
+	}
+	
+	33%{
+		background-position:
+			100vw 0vh,
+			0vw 0vh,
+			-100vw 0vh,
+			-200vw 0vh;
+		
+		background-size:cover;
+
+	}
+	
+	50%{
+		background-position:
+			100vw 0vh,
+			0vw 0vh,
+			-100vw 0vh,
+			-200vw 0vh;
+		
+		background-size:cover;
+
+	}
+	
+	66%{
+		background-position:
+			100vw 0vh,
+			100vw 0vh,
+			0vw 0vh,
+			-100vw 0vh;
+		
+		background-size:cover;
+		
+
+	}
+	
+	83%{
+		background-position:
+			100vw 0vh,
+			100vw 0vh,
+			0vw 0vh,
+			-100vw 0vh;
+		
+		background-size:cover;
+
+	}
+		
+	
+	100%{
+		background-position:
+			100vw 0vh,
+			100vw 0vh,
+			100vw 0vh,
+			0vw 0vh;
+		
+		background-size:cover;
+		
+	}
+	
+}
+
+
+
+
+
+/*Paramètres de base---------------------------------------------------------------*/
+
+html{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.625em;
+	line-height:1.5;
+	letter-spacing: 0.15rem;
+	scroll-behavior: smooth;
+}
+
+body, body *, body *:before, body *:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+}
+
+body{
+	color: #333;
+	background-color:rgb(245, 245, 245);
+}
+
+li{
+	list-style:none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a, a:link, a:visited, a:hover, a:focus, a:active{
+	text-decoration:none;
+	outline:none;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+/*Header Index------------------------------------------------------------------------*/
+
+header{
+	width:100vw;
+	height:100vh;
+	
+	background-image:url("../img/bg1.jpg"),
+	url("../img/bg2.jpg"),
+	url("../img/bg3.jpg"),
+	url("../img/bg1.jpg");
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:cover;
+	
+	animation-name:BgAnim;
+	animation-duration:10s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+	
+}
+
+#content-header{
+	background-color:rgba(104, 104, 104, 0.5);  
+	width:100vw;
+	height:100vh;
+}
+
+header h1, header p, header h2, nav li{
+	color:white;
+}
+
+header h1{
+	font-size:4.8rem;
+	width:100%;
+	margin:9.5rem auto 0 auto;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:600;
+}
+
+header p{
+	font-size:1.1rem;
+	margin:4% 14%;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+header h2{
+	font-size:2.2rem;
+	text-align:center;
+	background-color:rgba(126, 182, 178, 0.85);
+	border-radius:150px;
+
+	position:absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	padding:0.7rem 1.6rem;
+	margin-top:95px;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight:200;
+	
+}
+
+header ul{
+	position:absolute;
+	top:1.2rem;
+	text-align:center;
+	width:100%;
+	
+	
+}
+
+
+header h2:hover{
+	cursor:pointer;
+	color:#4b9b95b3;
+	background-color:#ffffffb3; 
+
+}
+
+nav li{
+	display:inline;
+	font-size:1.3rem;
+	padding:0 1.4rem;
+}
+
+nav li:not(.no-border){
+	border-right:1px solid white;
+}
+
+a{
+	color:inherit;
+}
+
+/*Bouton---------------------------------------------------------------*/
+
+.toggle-btn{
+	height:30px;
+	width:30px;
+	position : relative;
+	float: right;
+	margin-right:10px;
+	margin-top:5px;
+	
+}
+
+.toggle-btn span{
+	height:3px;
+	background-color:white;
+	width:100%;
+	position:absolute;
+	top:20px;
+	left:0;
+}
+
+
+.toggle-btn span:before{
+	content:"";
+	height:3px;
+	background-color:white;
+	width:100%;
+	position:absolute;
+	top:-10px;
+	left:0;
+}
+
+
+.toggle-btn span:after{
+	content:"";
+	height:3px;
+	background-color:white;
+	width:100%;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+
+.toggle-btn, .toggle-btn span, .toggle-btn span:after, .toggle-btn span:before{
+	opacity:0;
+}
+
+/*Div Nav-------------------------------------------------------------------------------------------------------*/
+
+#nav{
+	position:sticky;
+	top:0;
+	z-index:1;
+}
+
+#content-nav{
+	position:relative;
+	background-color:rgba(98, 171, 167, 0.9);
+}
+
+#nav ul{
+	padding:1.2rem 0;
+	width:100%;
+	text-align:center;	
+}
+
+nav li, .menu li{
+	transition-property:color;
+	transition-duration:0.5s;
+	transition-timing-function:ease-in-out;
+	display: inline;
+}
+
+
+nav ul li:hover, .menu ul li:hover{
+	color:black;
+}
+
+.menu li a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.page-active{
+	color:black;
+}
+
+.page-first{
+	opacity:0;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+/*Main--------------------------------------------------------------------------------*/
+
+main{
+	width:75%;
+	margin:5rem auto;
+}
+
+main p{
+	margin-bottom:1.2rem;
+	text-align:justify;
+}
+
+main img{
+	width:300px;
+	margin:3.4rem 0;
+}
+
+main h2{
+	font-size:2.2rem;
+	font-family: 'Montserrat', sans-serif;
+	margin:1rem 0;
+}
+
+main p,header p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.3rem;
+	line-height:20px;
+}
+
+main h3{
+	color:white;
+	background-color:rgba(98, 171, 167, 0.9);
+	border-radius:8px;
+	display:inline-block;
+	padding:0.5rem 1rem;
+	margin:1.4rem 0;
+}
+
+main h3:hover{
+	cursor:pointer;
+	color:black;
+	background-color:rgba(191, 191, 191, 0.9);
+}
+
+#h3-lien-visite{
+	margin-bottom:4rem;
+}
+
+
+.trait::after{
+	background-color:rgba(98, 171, 167, 0.9);
+	content:"";
+	display:block;
+	height:1.5px;
+	margin-top:1.5rem;
+	width:18.2rem;
+	}	
+
+#article-index p{
+	margin-top:20px;
+}
+	
+#article-index03 p{
+	margin-top:20px;
+}
+	
+/*Footer------------------------------------------------------------------------------*/
+
+footer{
+	color:white;
+	background-color:rgb(94, 94, 94);
+	font-family:'Open Sans', sans-serif;
+}
+
+#content-footer{
+	margin:0 10.2rem;
+	padding:2.2rem 0;
+}
+
+footer div{
+	margin-bottom:2.6rem;
+}
+
+footer h3{
+	font-size:1.3rem;
+	margin-bottom:1.6rem;
+}
+
+footer li{
+	font-size:1.1rem;
+	margin:0.5rem 0;
+	text-align:justify;
+}
+
+footer .liste-footer:nth-child(1) li:hover{
+	color:black;
+}
+
+footer img{
+	width:40px;
+}
+
+
+/*Médias queries-----------------------------------------------------------------------*/
+
+/*Adaptation du h2 mobile paysage-----------*/
+@media screen and (min-height:600px){
+	header h2{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top:0px;
+	}
+	
+}
+
+/*Adaptation de la barre de navigation------*/
+
+@media screen and (min-width:520px){
+	header nav ul, #nav ul{
+		width:75%;
+		text-align:left;
+		margin:0 auto;
+	}
+
+}
+
+/*Barre de navigation en responsive----------*/
+@media screen and (max-width:520px){
+
+	
+	.nav{
+		transition-duration:0.2s;
+	}
+
+	.nav_open{
+		height:264px;
+		transition-duration:0.2s;
+		display:block;
+	}
+	
+	.nav  li{
+		opacity:0;
+	}
+	
+	.nav_open  li{
+		opacity:1;
+		display:block;
+		padding:15px 0px 18px 0px;
+		border-bottom : 1px solid white;
+		margin:0 -48px;
+		
+	}
+
+	.nav_open  li:hover{
+	background-color:rgba(191, 191, 191, 0.9);
+	
+	}
+	
+	.toggle-btn, .toggle-btn span, .toggle-btn span:after, .toggle-btn span:before{
+	opacity:1;
+	cursor:pointer;
+	
+	}
+	
+	header nav{
+		display:none;
+	}
+	
+}
+
+
+/*Adaptation du footer-----------------------*/
+@media screen and (min-width:820px){
+	
+	footer .liste-footer{
+		display:inline-block;
+		width:30%;
+		margin:0 auto 20px auto;
+	}
+	
+}
+/*Adaptation globale du responsive------------*/
+@media screen and (min-width:1284px){
+
+	
+	article p{
+		font-size:14px;
+	}
+	
+	#article-index{
+		margin-top:33px;
+		margin-bottom:33px;
+	}
+	
+	#article-index img{
+		float:right;
+		width:25%;
+		margin:0 auto;
+		margin-top:22px;
+
+	}
+	
+	#article-index div{
+		display:inline-block;
+		width:52%;
+		height:300px;
+		margin-top:22px;
+	}
+	
+	#article-index p{
+		margin-top:0;
+	}
+	
+	#article-index02{
+		clear:both;
+	}
+	
+	#article-index02{
+		margin:33px 0 50px 0;
+		box-shadow:3px 2px 3px #6c69694d;
+		padding:20px;
+		border:1px solid rgba(98, 171, 167, 0.9);
+	}
+	
+	
+	#article-index02 img{
+		width:35%;
+		display:inline-block;
+		border:1px solid rgba(98, 171, 167, 0.9);
+	
+	}
+	
+	#article-index02 div{
+		float:right;
+		width:45%;
+		padding-top:33px;
+	}
+	
+	footer div{
+		padding:0 100px;
+	}
+}

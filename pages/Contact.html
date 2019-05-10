@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Découvrir Malte</title>
+		<meta name="Voyage Malte" content="contenu site sur voyage Malte">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/styles-pages.css">
+	</head>
+	<body>
+		<header id="contact">
+			<div id="content-header">
+				<h1>Contact</h1>
+			</div>
+		</header>
+		
+		<div id="nav">
+			<nav id="content-nav">
+				<div class="toggle-btn">
+					<span></span>
+				</div>
+				<div class="menu nav">
+					<ul>
+						<li class="no-border"><a class="page-first" href="#"></a></li>
+						<li><a href="../index.html">Accueil</a></li>
+						<li><a href="Visite.html">Que visiter ?</a></li>
+						<li><a href="Galerie.html">Galerie</a></li>
+						<li id="page-active" class="no-border"><a href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<main>
+			<section>
+				<article class="article-contact">
+					<h2>Soyez au courant de nos actualités</h2>
+					<span class="trait02"></span>
+					<div>
+						<p>N'hésitez pas à vous inscrire à la Newlestter afin de recevoir les dernières actualités et pleins d'offres avantageuses afin de passer votre (futur) voyage dans les meilleures conditions.
+						Le site Welcome to Malta est en partenariat avec de nombreux hotels aux meilleurs prix. Soyez les premiers à recevoir nos offres exclusives !</p>
+		
+						<p>Ce site fictif a été créé dans le cadre d'une formation en web développement. Son but est donc éducatif et sert à l'apprentissage personnel des différents types de langages tels que le html, le css et le javascript et n'est en aucun cas un site officiel sur la découverte de Malte.</p>
+					</div>
+				</article>
+				
+				<article class="article-form">
+				<form action="Contact.html" method="post" autocomplete="on">
+				<fieldset>
+					<legend>Inscrivez-vous à la Newsletter !</legend>
+					<p id="obligatoire">(<abbr>*</abbr>) : Champ obligatoire</p>
+					<div id="champs-first">
+						<label for="iptfirst">Prénom :</label>
+						<input type="text" name="firstname" id="iptfirst" >
+					</div>
+					
+					<div id="champs-name">
+						<label for="iptname">Nom :</label>
+						<input type="text" name="lastname" id="iptname" >
+					</div>
+					
+					<div id="champs-mail">
+						<label for="iptmail">Adresse Mail (<abbr>*</abbr>) :</label>
+						<input id="iptmail" type="email" name="mailinput"  placeholder="example@domain.com" required>
+					</div>
+					
+					<label>Avez-vous déjà visité Malte ?</label>
+					<label class="question"><input class="input-question" type="radio" value="oui" name="réponse">Oui</label>
+					<label class="question"><input class="input-question" type="radio" value="non" name="réponse">Non</label>
+
+			
+				</fieldset>
+				
+				<input id="envoyer" type="submit" value="Envoyer">
+				</form>
+				</article>
+				<span class="fin-article"></span>
+			</section>
+		</main>
+		<footer>
+			<div id="content-footer">
+				<div class="liste-footer">
+					<h3>Liens de la page</h3>
+					<ul>
+						<li><a href="../index.html">Accueil</a></li>
+						<li><a href="Visite.html">Que visiter ?</a></li>
+						<li><a href="Galerie.html">Galerie</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="liste-footer">
+					<h3>Adresse</h3>
+					<ul>
+						<li>Impasse des Capucins 1</li>
+						<li>Sliema, Malta</li>
+						<li>012/34.56.78</li>
+					</ul>
+				</div>
+				<div class="liste-footer">
+					<h3 id="titre-rs">Suivez-nous</h3>
+					<a href="https://www.facebook.com/" target="_blank"><img src="../img/fb.png" alt="logo-facebook"></a>
+					<a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="../img/instagram.png" alt="logo-instagram"></a>
+					<a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="logo-instagram"></a>
+				</div>
+				<div>
+					<p><a href="#">Conditions générales d'utilisations</a></p>
+					<p>Tous droits réservés</p>
+				</div>
+			</div>
+		</footer>
+			<script src="../js/script-commun.js"></script>
+		<script src="../js/script-contact.js"></script>
+	</body>
+</html>
